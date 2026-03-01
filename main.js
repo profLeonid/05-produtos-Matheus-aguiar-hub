@@ -15,17 +15,22 @@
 
          if (!validando) return true
         
-        const span = document.createElement('span')
+        const div = document.createElement('div')
+        const span = document.createElement('span' )
         const span1 = document.createElement('span')
         const span2 = document.createElement('span')
 
+        
         span.textContent = codigo.value
         span1.textContent = produto.value
         span2.textContent = quantidade.value
 
-        span1.className = 'flex flex-col ; bg-gray-100 border rounded-xs ; px-8 py-4 '
-        span.className = 'flex flex-col ; bg-gray-100 border rounded-xs ; px-8 py-4'
-        span2.className = 'flex flex-col ; bg-gray-100 border rounded-xs ; px-8 py-4'
+        div.className = 'space-y-4 mt-8'
+        span.className = 'flex flex-col ; bg-gray-100 border rounded-2xl ; px-8 py-4 '
+        span1.className = 'flex flex-col ; bg-gray-100 border rounded-2xl ; px-8 py-4'
+        span2.className = 'flex flex-col ; bg-gray-100 border rounded-2xl ; px-8 py-4'
+        
+        div.append(span ,span1 , span2)
 
-        lista.append(span ,span1 , span2)
+        lista.appendChild(div)
 }
