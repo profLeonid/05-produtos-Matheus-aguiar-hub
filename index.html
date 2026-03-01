@@ -4,47 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./verificacao.js" defer></script>
     <script src="./main.js" defer></script>
     <title>produtos</title>
 </head>
 
-<body class="bg-gray-300 flex flex-col items-center justify-center h-screen gap-2">
+<body class="bg-gray-300 ; flex flex-col items-center justify-center flex-wrap h-screen ; gap-2 ; duration-300">
 
-<h1 class="text-5xl ">
+    <main 
+    class="max-w-2xl mx-auto p-10 ; bg-blue-100 bg-transparent ; border-2 rounded-3xl shadow-2xl ; text-blue-400">
+
+<h1 
+class="text-5xl py-4 ; flex items-center justify-center ; font-bold">
     Lista de produtos
 </h1>
 
-<input 
-type="text" 
-id="codigo"
-class="border rounded-xs px-8 py-2"
->
+<div 
+class="">
+
+<p 
+class="flex items-center justify-center ; my-2 ; font-bold"
+>Produto
+</p>
 
 <input 
 type="text" 
 id="produto"
-class="border rounded-xs px-8 py-2"
->
+class="border rounded-xs ; px-8 py-2 my-2 ; block mx-auto">
+
+<p
+class="flex items-center justify-center ; my-2 ; font-bold">
+    Código
+</p>
 
 <input 
 type="text" 
+id="codigo"
+class="border rounded-xs ; px-8 py-2 my-2 ; block mx-auto">
+
+<p
+class="flex items-center justify-center ; my-2 ; font-bold">
+    Quantidade
+</p>
+<input 
+type="text" 
 id="quantidade"
-class="border rounded-xs px-8 py-2"
->
+class="border rounded-xs ; px-8 py-2 my-2 ; block mx-auto">
+</div>
 
 <button 
-class="bg-blue-400 text-white px-4 py-2"
-onclick="adicionarCodigo()"
-
->
+class="bg-blue-400 text-white font-bold ; px-4 py-2 my-5 mb-13 ; block mx-auto"
+onclick="adicionarCodigo()">
     Adicionar
 </button>
 
-<div id="lista"
-class="flex flex-col gap-2"
->
-
+<div 
+id="lista"
+class="flex flex-col ; gap-5 ">
 </div>
-    
+
+    </main>
+
 </body>
+
 </html>
