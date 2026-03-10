@@ -24,6 +24,10 @@
         span1.textContent     = produto.value
         span2.textContent     = quantidade.value
 
+        span.textContent = "Produto: " + span.textContent
+        span1.textContent = "Codigo: " + span1.textContent
+        span2.textContent = "Quantidade: " + span2.textContent
+
         div.className       = 'space-y-4 mt-8'
         span.className      = 'flex flex-col ; bg-gray-100 border rounded-2xl ; px-8 py-4 '
         span1.className     = 'flex flex-col ; bg-gray-100 border rounded-2xl ; px-8 py-4'
